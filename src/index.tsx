@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Routes from './routers'
+// import Demo7 from "@pages/demo/Breadcrumb";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root') as  Element)
