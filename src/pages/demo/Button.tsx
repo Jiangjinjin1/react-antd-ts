@@ -2,8 +2,11 @@ import React, { FC } from 'react';
 import type { MenuProps } from 'antd';
 import { Button, Menu, Tooltip, Dropdown } from 'antd';
 import { SearchOutlined, DownloadOutlined } from '@ant-design/icons';
+import CSS from './demo.module.css'
+import {useNavigate} from "react-router";
 
 const Demo1: FC = () => {
+    const navigate = useNavigate()
     const onMenuClick: MenuProps['onClick'] = (e) => {
         console.log('click', e);
     }
@@ -22,6 +25,11 @@ const Demo1: FC = () => {
             ]}
         />
     )
+
+    const toNextRouter = () => {
+        navigate('/nestrouter')
+    }
+
     return (
         <div className="App">
             <Button block type="primary">primary Button</Button>
@@ -40,6 +48,8 @@ const Demo1: FC = () => {
             </Button>
             <Button type="text" href="www.baidu.com" target="_blank">Text(baidu)</Button>
             <Dropdown.Button type="primary" overlay={menu}>Actions</Dropdown.Button>
+            <div className={CSS.box1}></div>
+            <Button type='primary' onClick={toNextRouter}>to NestRouter</Button>
         </div>
     )
 }

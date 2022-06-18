@@ -1,6 +1,6 @@
 import React from 'react'
 import lazyRequire from './LazyRequire'
-import { Route, BrowserRouter, Routes } from 'react-router-dom'
+import {Route, BrowserRouter, Routes} from 'react-router-dom'
 
 const Button = lazyRequire(() => import('./pages/demo/Button'))
 const Icon = lazyRequire(() => import('./pages/demo/Icon'))
@@ -13,6 +13,12 @@ const PageHeader = lazyRequire(() => import('./pages/demo/PageHeader'))
 const Cascader = lazyRequire(() => import('./pages/demo/Cascader'))
 const Form1 = lazyRequire(() => import('./pages/demo/Form1'))
 const Form2 = lazyRequire(() => import('./pages/demo/Form2'))
+const NestRouter = lazyRequire(() => import('./pages/demo/NestRouter'))
+const NestRouterDefault = lazyRequire(() => import('./pages/demo/NestRouterDefault'))
+const NestRouterId = lazyRequire(() => import('./pages/demo/NestRouterId'))
+const NestRouterNew = lazyRequire(() => import('./pages/demo/NestRouterNew'))
+const NotFound = lazyRequire(() => import('./pages/demo/NotFound'))
+const Dashboard = lazyRequire(() => import('./pages/demo/Dashboard'))
 
 export default () => (
 	<React.StrictMode>
@@ -30,6 +36,16 @@ export default () => (
 				<Route path='/cascader' element={<Cascader />} />
 				<Route path='/form1' element={<Form1 />} />
 				<Route path='/form2' element={<Form2 />} />
+				<Route path="/nestrouter" element={<NestRouter />}>
+					<Route index element={<NestRouterDefault />} />
+					<Route path=":id" element={<NestRouterId />} />
+					<Route path="create" element={<NestRouterNew />} />
+				</Route>
+				<Route path='dashboard/*' element={<Dashboard />} />
+				{/*<Route path="about" element={<Redirect to="nestrouter" />} />*/}
+
+
+				<Route path="*" element={<NotFound />} />
 			</Routes>
 		</BrowserRouter>
 	</React.StrictMode>
