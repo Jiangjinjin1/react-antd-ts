@@ -1,6 +1,6 @@
-import { MinusCircleOutlined, PlusOutlined } from '@ant-design/icons';
-import { Button, Form, Input } from 'antd';
-import React from 'react';
+import { MinusCircleOutlined, PlusOutlined } from '@ant-design/icons'
+import { Button, Form, Input } from 'antd'
+import React from 'react'
 
 const formItemLayout = {
     labelCol: {
@@ -11,18 +11,18 @@ const formItemLayout = {
         xs: { span: 24 },
         sm: { span: 20 },
     },
-};
+}
 const formItemLayoutWithOutLabel = {
     wrapperCol: {
         xs: { span: 24, offset: 0 },
         sm: { span: 20, offset: 4 },
     },
-};
+}
 
 const Demo10: React.FC = () => {
     const onFinish = (values: any) => {
-        console.log('Received values of form:', values);
-    };
+        console.log('Received values of form:', values)
+    }
 
     return (
         <Form name="dynamic_form_item" {...formItemLayoutWithOutLabel} onFinish={onFinish}>
@@ -32,7 +32,7 @@ const Demo10: React.FC = () => {
                     {
                         validator: async (_, names) => {
                             if (!names || names.length < 2) {
-                                return Promise.reject(new Error('At least 2 passengers'));
+                                return Promise.reject(new Error('At least 2 passengers'))
                             }
                         },
                     },
@@ -81,7 +81,7 @@ const Demo10: React.FC = () => {
                             <Button
                                 type="dashed"
                                 onClick={() => {
-                                    add('The head item', 0);
+                                    add('The head item', 0)
                                 }}
                                 style={{ width: '60%', marginTop: '20px' }}
                                 icon={<PlusOutlined />}
@@ -99,7 +99,7 @@ const Demo10: React.FC = () => {
                 </Button>
             </Form.Item>
         </Form>
-    );
-};
+    )
+}
 
-export default Demo10;
+export default Demo10

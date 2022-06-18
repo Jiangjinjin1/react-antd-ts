@@ -1,20 +1,18 @@
-import {Layout, Menu, MenuProps} from 'antd'
+import { Layout, Menu, MenuProps } from 'antd'
 import {
     MenuUnfoldOutlined,
     MenuFoldOutlined,
     UserOutlined,
     VideoCameraOutlined,
-    UploadOutlined
-} from '@ant-design/icons';
+    UploadOutlined,
+} from '@ant-design/icons'
 import React, { FC, useState } from 'react'
 import './demo.css'
 
-const { Header, Content, Sider } = Layout;
-
-
+const { Header, Content, Sider } = Layout
 
 const Demo5: FC = () => {
-    const [collapsed, setCollapsed] = useState(false);
+    const [collapsed, setCollapsed] = useState(false)
 
     return (
         <Layout>

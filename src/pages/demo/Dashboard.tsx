@@ -1,10 +1,9 @@
-import React, { FC } from 'react';
-import {Route, Routes } from 'react-router-dom';
-import DashboardGraphs from './DashboardGraphs';
-import InvoiceList from './InvoiceList';
+import React, { FC } from 'react'
+import { Route, Routes } from 'react-router-dom'
+import DashboardGraphs from './DashboardGraphs'
+import InvoiceList from './InvoiceList'
 
 const Demo16: FC = () => {
-
     return (
         <div>
             <p>Look, more routes!</p>
@@ -16,4 +15,4 @@ const Demo16: FC = () => {
     )
 }
 
-export default Demo16;
+export default Demo16

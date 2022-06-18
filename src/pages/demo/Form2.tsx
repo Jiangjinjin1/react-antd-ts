@@ -1,11 +1,11 @@
-import { MinusCircleOutlined, PlusOutlined } from '@ant-design/icons';
-import { Button, Form, Input, Space } from 'antd';
-import React from 'react';
+import { MinusCircleOutlined, PlusOutlined } from '@ant-design/icons'
+import { Button, Form, Input, Space } from 'antd'
+import React from 'react'
 
 const Demo11: React.FC = () => {
     const onFinish = (values: any) => {
-        console.log('Received values of form:', values);
-    };
+        console.log('Received values of form:', values)
+    }
 
     return (
         <Form name="dynamic_form_nest_item" onFinish={onFinish} autoComplete="off">
@@ -45,7 +45,7 @@ const Demo11: React.FC = () => {
                 </Button>
             </Form.Item>
         </Form>
-    );
-};
+    )
+}
 
-export default Demo11;
+export default Demo11

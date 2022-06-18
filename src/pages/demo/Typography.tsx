@@ -1,17 +1,17 @@
-import { Divider, Typography, Slider } from 'antd';
-import { SmileOutlined, SmileFilled } from '@ant-design/icons';
-import React, { FC, useState } from 'react';
+import { Divider, Typography, Slider } from 'antd'
+import { SmileOutlined, SmileFilled } from '@ant-design/icons'
+import React, { FC, useState } from 'react'
 import './demo.css'
 
-const { Title, Paragraph, Text, Link } = Typography;
+const { Title, Paragraph, Text, Link } = Typography
 
 const blockContent = `AntV 是蚂蚁金服全新一代数据可视化解决方案，致力于提供一套简单方便、专业可靠、不限可能的数据可视化最佳实践。得益于丰富的业务场景和用户需求挑战，AntV 经历多年积累与不断打磨，已支撑整个阿里集团内外 20000+ 业务系统，通过了日均千万级 UV 产品的严苛考验。
-我们正在基础图表，图分析，图编辑，地理空间可视化，智能可视化等各个可视化的领域耕耘，欢迎同路人一起前行。`;
+我们正在基础图表，图分析，图编辑，地理空间可视化，智能可视化等各个可视化的领域耕耘，欢迎同路人一起前行。`
 
 const Demo3: FC = () => {
-    const [editableStr, setEditableStr] = useState('This is an editable text.');
+    const [editableStr, setEditableStr] = useState('This is an editable text.')
 
-    const [rows, setRows] = useState(1);
+    const [rows, setRows] = useState(1)
 
     return (
         <Typography>
@@ -34,7 +34,7 @@ const Demo3: FC = () => {
                         expandable: true,
                         suffix: '--William Shakespeare',
                         onEllipsis: ellipsis => {
-                            console.log('Ellipsis changed:', ellipsis);
+                            console.log('Ellipsis changed:', ellipsis)
                         },
                     }}
                     title={`${blockContent}--William Shakespeare`}
@@ -50,20 +50,19 @@ const Demo3: FC = () => {
                 duplication and reduce the efficiency of development.
             </Paragraph>
             <Paragraph>
-                After massive project practice and summaries, Ant Design, a design language for background
-                applications, is refined by Ant UED Team, which aims to{' '}
+                After massive project practice and summaries, Ant Design, a design language for background applications,
+                is refined by Ant UED Team, which aims to{' '}
                 <Text strong>
-                    uniform the user interface specs for internal background projects, lower the unnecessary
-                    cost of design differences and implementation and liberate the resources of design and
-                    front-end development
+                    uniform the user interface specs for internal background projects, lower the unnecessary cost of
+                    design differences and implementation and liberate the resources of design and front-end development
                 </Text>
                 .
             </Paragraph>
             <Title level={2}>Guidelines and Resources</Title>
             <Paragraph>
-                We supply a series of design principles, practical patterns and high quality design resources
-                (<Text code>Sketch</Text> and <Text code>Axure</Text>), to help people create their product
-                prototypes beautifully and efficiently.
+                We supply a series of design principles, practical patterns and high quality design resources (
+                <Text code>Sketch</Text> and <Text code>Axure</Text>), to help people create their product prototypes
+                beautifully and efficiently.
             </Paragraph>
             <Paragraph>
                 <ul>
@@ -92,8 +91,8 @@ const Demo3: FC = () => {
             </Paragraph>
             <Title level={2}>设计资源</Title>
             <Paragraph>
-                我们提供完善的设计原则、最佳实践和设计资源文件（<Text code>Sketch</Text> 和
-                <Text code>Axure</Text>），来帮助业务快速设计出高质量的产品原型。
+                我们提供完善的设计原则、最佳实践和设计资源文件（<Text code>Sketch</Text> 和<Text code>Axure</Text>
+                ），来帮助业务快速设计出高质量的产品原型。
             </Paragraph>
 
             <Paragraph>

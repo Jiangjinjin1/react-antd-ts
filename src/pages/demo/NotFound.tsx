@@ -1,12 +1,7 @@
-import React, { FC } from 'react';
+import React, { FC } from 'react'
 
 const Demo16: FC = () => {
-
-    return (
-        <div className="App">
-            页面未找到
-        </div>
-    )
+    return <div className="App">页面未找到</div>
 }
 
-export default Demo16;
+export default Demo16

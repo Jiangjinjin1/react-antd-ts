@@ -1,7 +1,6 @@
-import React, { FC } from 'react';
+import React, { FC } from 'react'
 
 const Demo17: FC = () => {
-
     return (
         <div>
             <p>DashboardGraphs!</p>
@@ -9,4 +8,4 @@ const Demo17: FC = () => {
     )
 }
 
-export default Demo17;
+export default Demo17

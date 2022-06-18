@@ -1,5 +1,5 @@
-import { PageHeader } from 'antd';
-import React from 'react';
+import { PageHeader } from 'antd'
+import React from 'react'
 
 const routes = [
     {
@@ -14,15 +14,10 @@ const routes = [
         path: 'second',
         breadcrumbName: 'Third-level Menu',
     },
-];
+]
 
 const Demo8: React.FC = () => (
-    <PageHeader
-        className="site-page-header"
-        title="Title"
-        breadcrumb={{ routes }}
-        subTitle="This is a subtitle"
-    />
-);
+    <PageHeader className="site-page-header" title="Title" breadcrumb={{ routes }} subTitle="This is a subtitle" />
+)
 
-export default Demo8;
+export default Demo8

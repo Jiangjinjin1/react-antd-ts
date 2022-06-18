@@ -1,11 +1,11 @@
-import { Button } from 'antd';
-import React, {FC, useEffect} from 'react';
-import { useParams, useSearchParams } from 'react-router-dom';
+import { Button } from 'antd'
+import React, { FC, useEffect } from 'react'
+import { useParams, useSearchParams } from 'react-router-dom'
 
 const Demo13: FC = () => {
-    let params = useParams();
+    const params = useParams()
 
-    let [searchParams, setSearchParams] = useSearchParams();
+    const [searchParams, setSearchParams] = useSearchParams()
 
     useEffect(() => {
         console.log('渲染了id：', params.id)
@@ -14,7 +14,7 @@ const Demo13: FC = () => {
 
     const getSearchParams = () => {
         // @ts-ignore
-        setSearchParams({id: 555})
+        setSearchParams({ id: 555 })
     }
 
     return (
@@ -27,4 +27,4 @@ const Demo13: FC = () => {
     )
 }
 
-export default Demo13;
+export default Demo13

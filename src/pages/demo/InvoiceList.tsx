@@ -1,7 +1,6 @@
-import React, { FC } from 'react';
+import React, { FC } from 'react'
 
 const Demo18: FC = () => {
-
     return (
         <div>
             <p>InvoiceList!</p>
@@ -9,4 +8,4 @@ const Demo18: FC = () => {
     )
 }
 
-export default Demo18;
+export default Demo18
