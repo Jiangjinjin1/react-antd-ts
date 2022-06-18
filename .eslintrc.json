@@ -1,0 +1,36 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended", // 禁用插件中与 Prettier 冲突的规则
+        "plugin:prettier/recommended" // eslint-plugin-prettier搭配eslint-config-prettier使用简写形式
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "prettier/prettier": "warn", // 开启prettier规则
+        "@typescript-eslint/ban-ts-comment": "off",
+        "eqeqeq": 2, //必须使用全等
+        "no-debugger": "warn",
+        "react/display-name": 0, // 防止React组件定义中缺少displayName
+        "react/no-string-refs": "warn", // 防止字符串定义引用和防止引用this.refs
+        "react-hooks/exhaustive-deps": 0,
+        "no-unused-vars": 0, // 禁止出现未使用过的变量
+        "react/prop-types": 1, // 防止React组件定义中缺少属性验证
+        "indent": 0 // 强制使用一致的缩进
+    }
+}
