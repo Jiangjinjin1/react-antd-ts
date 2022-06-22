@@ -1,6 +1,7 @@
+import React, { FC } from 'react'
+
 import Icon, { createFromIconfontCN } from '@ant-design/icons'
 import type { CustomIconComponentProps } from '@ant-design/icons/lib/components/Icon'
-import React, { FC } from 'react'
 
 const Demo2: FC = () => {
     const HeartSvg = () => (

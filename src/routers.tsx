@@ -1,6 +1,8 @@
 import React from 'react'
-import lazyRequire from './LazyRequire'
+
 import { Route, BrowserRouter, Routes } from 'react-router-dom'
+
+import lazyRequire from './LazyRequire'
 
 const Button = lazyRequire(() => import('./pages/demo/Button'))
 const Icon = lazyRequire(() => import('./pages/demo/Icon'))

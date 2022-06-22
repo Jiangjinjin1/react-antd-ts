@@ -1,6 +1,7 @@
-import { Divider, Typography, Slider } from 'antd'
-import { SmileOutlined, SmileFilled } from '@ant-design/icons'
 import React, { FC, useState } from 'react'
+
+import { SmileOutlined, SmileFilled } from '@ant-design/icons'
+import { Divider, Typography, Slider } from 'antd'
 import './demo.css'
 
 const { Title, Paragraph, Text, Link } = Typography

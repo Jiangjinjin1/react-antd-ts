@@ -1,6 +1,7 @@
+import React from 'react'
+
 import { MinusCircleOutlined, PlusOutlined } from '@ant-design/icons'
 import { Button, Form, Input, Space } from 'antd'
-import React from 'react'
 
 const Demo11: React.FC = () => {
     const onFinish = (values: any) => {

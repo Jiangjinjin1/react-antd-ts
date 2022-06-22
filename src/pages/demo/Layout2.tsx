@@ -1,4 +1,5 @@
-import { Layout, Menu, MenuProps } from 'antd'
+import React, { FC, useState } from 'react'
+
 import {
     MenuUnfoldOutlined,
     MenuFoldOutlined,
@@ -6,7 +7,7 @@ import {
     VideoCameraOutlined,
     UploadOutlined,
 } from '@ant-design/icons'
-import React, { FC, useState } from 'react'
+import { Layout, Menu, MenuProps } from 'antd'
 import './demo.css'
 
 const { Header, Content, Sider } = Layout

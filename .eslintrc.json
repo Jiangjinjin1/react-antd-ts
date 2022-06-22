@@ -19,7 +19,8 @@
     },
     "plugins": [
         "react",
-        "@typescript-eslint"
+        "@typescript-eslint",
+        "import" // eslint-plugin-import配置
     ],
     "rules": {
         "prettier/prettier": "warn", // 开启prettier规则
@@ -31,6 +32,25 @@
         "react-hooks/exhaustive-deps": 0,
         "no-unused-vars": 0, // 禁止出现未使用过的变量
         "react/prop-types": 1, // 防止React组件定义中缺少属性验证
-        "indent": 0 // 强制使用一致的缩进
+        "indent": 0, // 强制使用一致的缩进
+        "import/order": [ // eslint-plugin-import 规则配置
+            "error",
+            {
+                "groups": ["builtin", "external", "internal", ["parent", "sibling"]],
+                "pathGroups": [
+                    {
+                        "pattern": "react",
+                        "group": "external",
+                        "position": "before"
+                    }
+                ],
+                "pathGroupsExcludedImportTypes": ["react"],
+                "newlines-between": "always",
+                "alphabetize": {
+                    "order": "asc",
+                    "caseInsensitive": true
+                }
+            }
+        ]
     }
 }

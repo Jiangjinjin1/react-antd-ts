@@ -1,9 +1,11 @@
 import React, { FC } from 'react'
+
+import { SearchOutlined, DownloadOutlined } from '@ant-design/icons'
 import type { MenuProps } from 'antd'
 import { Button, Menu, Tooltip, Dropdown } from 'antd'
-import { SearchOutlined, DownloadOutlined } from '@ant-design/icons'
-import CSS from './demo.module.css'
 import { useNavigate } from 'react-router'
+
+import CSS from './demo.module.css'
 
 const Demo1: FC = () => {
     const navigate = useNavigate()

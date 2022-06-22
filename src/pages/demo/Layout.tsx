@@ -1,6 +1,7 @@
-import { Breadcrumb, Layout, Menu, MenuProps } from 'antd'
-import { LaptopOutlined, NotificationOutlined, UserOutlined } from '@ant-design/icons'
 import React, { FC } from 'react'
+
+import { LaptopOutlined, NotificationOutlined, UserOutlined } from '@ant-design/icons'
+import { Breadcrumb, Layout, Menu, MenuProps } from 'antd'
 import './demo.css'
 
 const { Header, Content, Footer, Sider } = Layout
