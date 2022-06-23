@@ -10,7 +10,7 @@ const blockContent = `AntV 是蚂蚁金服全新一代数据可视化解决方�
 我们正在基础图表，图分析，图编辑，地理空间可视化，智能可视化等各个可视化的领域耕耘，欢迎同路人一起前行。`
 
 const Demo3: FC = () => {
-    const [editableStr, setEditableStr] = useState('This is an editable text.')
+    const [editableStr, setEditableStr] = useState<string>('This is an editable text.')
 
     const [rows, setRows] = useState(1)
 
