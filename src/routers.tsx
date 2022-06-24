@@ -22,6 +22,8 @@ const NestRouterNew = lazyRequire(() => import('./pages/demo/NestRouterNew'))
 const NotFound = lazyRequire(() => import('./pages/demo/NotFound'))
 const Dashboard = lazyRequire(() => import('./pages/demo/Dashboard'))
 
+const EchartsDemo1 = lazyRequire(() => import('./pages/echartsDemo/EchartsDemo1'))
+
 export default () => (
     <React.StrictMode>
         <BrowserRouter>
@@ -45,6 +47,8 @@ export default () => (
                 </Route>
                 <Route path="dashboard/*" element={<Dashboard />} />
                 {/*<Route path="about" element={<Redirect to="nestrouter" />} />*/}
+
+                <Route path="/echartsdemo1" element={<EchartsDemo1 />} />
 
                 <Route path="*" element={<NotFound />} />
             </Routes>
